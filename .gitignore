@@ -1,4 +1,4 @@
-HELP.md
+javaEmail/HELP.md
 /target/
 !.mvn/wrapper/maven-wrapper.jar
 
@@ -27,4 +27,4 @@ HELP.md
 
 ### VS Code ###
 .vscode/
-.idea/*
+.idea*
