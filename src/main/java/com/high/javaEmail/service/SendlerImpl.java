@@ -20,6 +20,7 @@ public class SendlerImpl implements Sendler {
     @Override
     public boolean sendMail(BodyMessage email) {
         SimpleMailMessage mailMessage = new SimpleMailMessage();
+
         mailMessage.setTo(email.getToEmail());
         mailMessage.setSubject(email.getSubject());
         mailMessage.setText(email.getMessage());
