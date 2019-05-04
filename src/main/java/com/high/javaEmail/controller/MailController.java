@@ -12,7 +12,7 @@ public class MailController {
     @Autowired
     Sendler sendler;
 
-    @PostMapping("/")
+    @PostMapping("/notification/email")
     public boolean sendMail(@RequestBody BodyMessage message){
 
         return sendler.sendMail(message);
