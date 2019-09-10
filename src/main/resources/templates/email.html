@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/titatoggle/2.1.2/titatoggle-dist-min.css">
+</head>
+<body style="color:black">
+<div class="container">
+<div style="border: 1px solid #e6d9d9">
+    <div style="background-color: #e6e9ec" align="center">
+        <img class="mx-auto d-block" src="cid:image" alt="Card image" style=" width: 300px; height: 100px; margin-top: 10px">
+    </div>
+<div class="card">
+    <div class="card-body">
+        <h2 class="" style="margin-left: 10px">Vacancies</h2>`
+        <!--/*@thymesVar id="links" type="org.thymeleaf"*/-->
+            <ul class="card-text">
+            <li  th:each="name:${links}" th:text="${name}"></li>
+            </ul>
+        <hr style="border: 1px solid #e6d9d9">
+        <p style="text-align: center">Dear friend, We wish you find your <b>dream job</b></p>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>

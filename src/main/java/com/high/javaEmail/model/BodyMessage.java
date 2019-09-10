@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Map;
 
 
 @Getter
@@ -13,8 +14,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class BodyMessage {
 
-    private String [] toEmail;
-    private String subject;
-    private String message;
+    private Object body;
+    private Map<String, String> notifications;
 
 }

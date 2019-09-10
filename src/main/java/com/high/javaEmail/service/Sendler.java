@@ -4,5 +4,5 @@ import com.high.javaEmail.model.BodyMessage;
 
 public interface Sendler {
 
-     boolean sendMail(BodyMessage message);
+     void sendMail(BodyMessage message);
 }
